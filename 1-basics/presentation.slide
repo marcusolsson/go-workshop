@@ -26,7 +26,7 @@ Inferring type
 
 .code variables/example1.go /START INFER OMIT/,/END INFER OMIT/
 
-Short hand
+Shorthand
 
 .code variables/example1.go /START SHORT OMIT/,/END SHORT OMIT/
 
@@ -34,7 +34,7 @@ Short hand
 
 .code functions/example1.go /^func hello/,/^}/
 
-Arguments with same type can be written more concise.
+Arguments with same type can be written more concisely.
 
 .code functions/example1.go /^func add/,/^}/
 
@@ -99,7 +99,7 @@ Interfaces in Go are implemented _implicitly_.
 
 * Interfaces
 
-No dependency between interface and implementation.
+No dependency between interface and implementation
 
 .code interfaces/example1.go /START EXAMPLE OMIT/,/END EXAMPLE OMIT/
 
@@ -107,7 +107,7 @@ No dependency between interface and implementation.
 
 Packages are ...
 
-Every .go-file must define the package it belongs to
+Every .go file must define the package it belongs to.
 
 .code packages/example1.go /START HELLO OMIT/,/END HELLO OMIT/ HLpackage
 
