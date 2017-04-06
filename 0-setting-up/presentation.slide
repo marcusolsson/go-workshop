@@ -14,6 +14,10 @@ Bonnier Broadcasting
 
 Follow the installation instructions for your system
 
+On a Mac, installing via Homebrew can be convenient:
+
+    brew install go
+
 * Setting your GOPATH
 
 Since Go 1.8, the default GOPATH is
