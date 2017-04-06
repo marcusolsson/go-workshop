@@ -1,0 +1,140 @@
+Go Fundamentals
+Language Syntax
+
+Marcus Olsson
+Data Engineer
+Bonnier Broadcasting
+@marcusolsson
+
+* Variables
+
+Declaring variables 
+
+.code variables/example1.go /START DECL OMIT/,/END DECL OMIT/
+
+Initializing variables 
+
+.code variables/example1.go /START INIT OMIT/,/END INIT OMIT/
+
+If not explicitly initialized, variables will be _zero-initialized_.
+
+* Variables
+
+Inferring type 
+
+.code variables/example1.go /START INFER OMIT/,/END INFER OMIT/
+
+Short hand
+
+.code variables/example1.go /START SHORT OMIT/,/END SHORT OMIT/
+
+* Functions
+
+.code functions/example1.go /^func hello/,/^}/
+
+Arguments with same type can be written more concise.
+
+.code functions/example1.go /^func add/,/^}/
+
+Multiple return parameters
+
+.code functions/example1.go /^func swap/,/^}/
+
+* Struct types
+
+.code struct/example1.go /^type movie/,/^}/
+
+Structs can be initialized using struct literals.
+
+.code struct/example1.go /START INIT OMIT/,/END INIT OMIT/
+
+Individual fields can be accessed using the dot (.) operator.
+
+.code struct/example1.go /START GETSET OMIT/,/END GETSET OMIT/
+
+* Methods
+
+A method is a function with a defined _receiver_.
+
+.code methods/example1.go /START METHOD OMIT/,/END METHOD OMIT/
+.play methods/example1.go /^func main/,/^}/
+
+* Methods
+
+But what about _modifying_ the struct from its method?
+
+.code methods/example2.go /rename/,/^}/
+.play methods/example2.go /^func main/,/^}/
+
+* Pointers
+
+A pointer is its own type
+
+.code pointers/example1.go /START DECL OMIT/,/END DECL OMIT/
+
+Ampersand (&) is used to fetch a pointer to an existing value.
+
+.play pointers/example1.go /START REF OMIT/,/END REF OMIT/
+
+Asterisk (*) is used to fetch the value a pointer points to.
+
+.code pointers/example1.go /START DEREF OMIT/,/END DEREF OMIT/
+
+* Methods (revisited)
+
+We'll make the method receiver into a pointer instead.
+
+.code methods/example3.go /rename/,/^}/
+.play methods/example3.go /^func main/,/^}/
+
+* Interfaces
+
+.code interfaces/example1.go /^type notifier/,/^}/
+
+Interfaces in Go are implemented _implicitly_.
+
+.code interfaces/example1.go /START IMPL OMIT/,/END IMPL OMIT/
+
+* Interfaces
+
+No dependency between interface and implementation.
+
+.code interfaces/example1.go /START EXAMPLE OMIT/,/END EXAMPLE OMIT/
+
+* Packages
+
+Packages are ...
+
+Every .go-file must define the package it belongs to
+
+.code packages/example1.go /START HELLO OMIT/,/END HELLO OMIT/ HLpackage
+
+* Packages
+
+Packages need to be imported before they can be used.
+
+.code packages/example1.go /START HELLO OMIT/,/END HELLO OMIT/ HLimport
+
+Package name is used to reference functions within that package.
+
+.code packages/example1.go /START HELLO OMIT/,/END HELLO OMIT/ HLuse
+
+* Exporting
+
+In order for other packages to use your function, it needs to be _exported_.
+
+Functions (and other identifiers) are exported by uppercasing the first letter.
+
+.code packages/example1.go /START EXPORT OMIT/,/END EXPORT OMIT/
+
+In other words, `Hello` will be part of your package _API_.
+
+* Exporting
+
+Functions are not the only thing we can export.
+
+.code packages/example1.go /START STRUCT OMIT/,/END STRUCT OMIT/
+
+* Arrays and slices
+
+* Maps

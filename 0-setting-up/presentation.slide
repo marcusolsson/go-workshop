@@ -1,0 +1,51 @@
+Go Fundamentals
+Setting up your Go environment
+
+Marcus Olsson
+Data Engineer
+Bonnier Broadcasting
+@marcusolsson
+
+* Installing Go
+
+* Download the latest release
+
+.link https://golang.org/dl https://golang.org/dl
+
+Follow the installation instructions for your system
+
+* Setting your GOPATH
+
+Since Go 1.8, the default GOPATH is
+
+- Unix: $HOME/go
+- Windows: %USERPROFILE%\go
+
+If you're using an earlier version, you'll need to manually set GOPATH
+
+* Installing Visual Studio Code
+
+* Download the latest version
+
+.link https://code.visualstudio.com https://code.visualstudio.com
+
+* Install the Go extension
+
+- Go to View -> Extensions
+- Search for the Go extension (by lukehoban) and click 'Install'
+- Hit 'Reload' to activate the extension
+
+* Building your first application
+
+* Hello World
+
+- Create the following directory structure
+
+    $ mkdir -p $GOPATH/src/github.com/yourname/hello
+
+- Open the directory in your editor
+- Create a file called `main.go` that contains:
+
+.code examples/hello.go
+
+- VS Code: Install Go tools when asked to
