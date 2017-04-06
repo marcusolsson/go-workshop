@@ -50,7 +50,7 @@ Structs can be initialized using struct literals.
 
 .code struct/example1.go /START INIT OMIT/,/END INIT OMIT/
 
-Individual fields can be accessed using the dot (.) operator.
+Individual fields can be accessed using the dot (`.`) operator.
 
 .code struct/example1.go /START GETSET OMIT/,/END GETSET OMIT/
 
@@ -74,11 +74,11 @@ A pointer is its own type
 
 .code pointers/example1.go /START DECL OMIT/,/END DECL OMIT/
 
-Ampersand (&) is used to fetch a pointer to an existing value.
+Ampersand (`&`) is used to fetch a pointer to an existing value.
 
 .play pointers/example1.go /START REF OMIT/,/END REF OMIT/
 
-Asterisk (*) is used to fetch the value a pointer points to.
+Asterisk (`*`) is used to fetch the value a pointer points to.
 
 .code pointers/example1.go /START DEREF OMIT/,/END DEREF OMIT/
 
@@ -107,7 +107,7 @@ No dependency between interface and implementation
 
 Packages are ...
 
-Every .go file must define the package it belongs to.
+Every `.go` file must define the package it belongs to.
 
 .code packages/example1.go /START HELLO OMIT/,/END HELLO OMIT/ HLpackage
 
