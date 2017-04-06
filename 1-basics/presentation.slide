@@ -16,7 +16,7 @@ Initializing variables
 
 .code variables/example1.go /START INIT OMIT/,/END INIT OMIT/
 
-If not explicitly initialized, variables will be _zero-initialized_.
+If not explicitly initialized, variables will be initialized to their respective _zero_ _value_.
 
 * Variables
 
