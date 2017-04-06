@@ -8,11 +8,11 @@ Bonnier Broadcasting
 
 * Variables
 
-Declaring variables 
+Declaring variables
 
 .code variables/example1.go /START DECL OMIT/,/END DECL OMIT/
 
-Initializing variables 
+Initializing variables
 
 .code variables/example1.go /START INIT OMIT/,/END INIT OMIT/
 
@@ -22,7 +22,7 @@ If not explicitly initialized, variables will be initialized to their respective
 
 * Variables
 
-Inferring type 
+Inferring type
 
 .code variables/example1.go /START INFER OMIT/,/END INFER OMIT/
 
