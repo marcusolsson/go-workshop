@@ -20,12 +20,12 @@ On a Mac, installing via Homebrew can be convenient:
 
 * Setting your GOPATH
 
-Since Go 1.8, the default GOPATH is
+Since Go 1.8, the default `GOPATH` is
 
-- Unix: $HOME/go
-- Windows: %USERPROFILE%\go
+- Unix: `$HOME/go`
+- Windows: `%USERPROFILE%\go`
 
-If you're using an earlier version, you'll need to manually set GOPATH
+If you're using an earlier version, you'll need to manually set `GOPATH`
 
 * Installing Visual Studio Code
 
