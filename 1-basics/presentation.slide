@@ -68,6 +68,9 @@ But what about _modifying_ the struct from its method?
 .code methods/example2.go /rename/,/^}/
 .play methods/example2.go /^func main/,/^}/
 
+The `rename` method is being passed a _copy_ of the `user` struct.
+This is not what we wanted.
+
 * Pointers
 
 A pointer is its own type
