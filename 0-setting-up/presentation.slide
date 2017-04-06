@@ -46,6 +46,6 @@ If you're using an earlier version, you'll need to manually set GOPATH
 - Open the directory in your editor
 - Create a file called `main.go` that contains:
 
-.code examples/hello.go
+.code hello.go
 
 - VS Code: Install Go tools when asked to
