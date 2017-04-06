@@ -8,6 +8,13 @@ func main() {
 	var valid bool
 	// END DECL OMIT
 
+	// START ZERO OMIT
+	var name string   // ""
+	var year int      // 0
+	var ratio float64 // 0.0
+	var valid bool    // false
+	// END ZERO OMIT
+
 	// START INIT OMIT
 	var name string = "Beth"
 	var year int = 2008

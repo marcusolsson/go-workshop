@@ -18,6 +18,8 @@ Initializing variables
 
 If not explicitly initialized, variables will be initialized to their respective _zero_ _value_.
 
+.code variables/example1.go /START ZERO OMIT/,/END ZERO OMIT/
+
 * Variables
 
 Inferring type 
