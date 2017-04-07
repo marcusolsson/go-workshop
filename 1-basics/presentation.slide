@@ -46,7 +46,7 @@ Arguments with same type can be written more concisely.
 
 .code functions/example1.go /^func add/,/^}/
 
-Multiple return parameters
+Multiple return values
 
 .code functions/example1.go /^func swap/,/^}/
 
