@@ -30,6 +30,14 @@ Shorthand
 
 .code variables/example1.go /START SHORT OMIT/,/END SHORT OMIT/
 
+* Exercises
+
+- Will this run? If not, why? How do we fix it?
+
+.play variables/exercise1.go
+
+- Try removing the `fmt.Println` line. Will it still run?
+
 * Functions
 
 .code functions/example1.go /^func hello/,/^}/
@@ -41,6 +49,14 @@ Arguments with same type can be written more concisely.
 Multiple return parameters
 
 .code functions/example1.go /^func swap/,/^}/
+
+* Exercise
+
+- Write a function that takes a first name and last name, and returns the full name
+
+.code functions/exercise1.go
+
+- Try switching place of the two functions. Does it matter if the function is defined before or after it's being used?
 
 * Struct types
 

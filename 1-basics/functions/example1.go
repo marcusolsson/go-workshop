@@ -1,3 +1,5 @@
+// +build OMIT
+
 package main
 
 func hello(name string) string {
