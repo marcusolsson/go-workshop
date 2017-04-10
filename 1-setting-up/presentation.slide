@@ -8,7 +8,7 @@ Bonnier Broadcasting
 
 * Installing Go
 
-* Download the latest release
+Download the latest release
 
 .link https://golang.org/dl https://golang.org/dl
 
@@ -20,17 +20,15 @@ On a Mac, installing via Homebrew can be convenient:
 
 * Installing Visual Studio Code
 
-* Download the latest version
+Download the latest version
 
 .link https://code.visualstudio.com https://code.visualstudio.com
 
-* Install the Go extension
+Install the Go extension
 
 - Go to View -> Extensions
 - Search for the Go extension (by lukehoban) and click 'Install'
 - Hit 'Reload' to activate the extension
-
-* Hello World
 
 * Creating your first Go application
 

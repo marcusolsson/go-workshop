@@ -58,6 +58,22 @@ Multiple return values
 
 - Try switching place of the two functions. Does it matter if the function is defined before or after it's being used?
 
+* If
+
+No parentheses needed
+
+.code if/example1.go /START IF OMIT/,/END IF OMIT/
+
+Test multiple conditions with `else` `if` and `else`
+
+.code if/example1.go /func review/,/^}/
+
+* Loops
+
+There is only one looping construct, the `for` loop
+
+.code loops/example1.go /func example/,/^}/
+
 * Struct types
 
 .code struct/example1.go /^type movie/,/^}/
@@ -156,6 +172,30 @@ Functions are not the only thing we can export.
 
 .code packages/example1.go /START STRUCT OMIT/,/END STRUCT OMIT/
 
-* Arrays and slices
+* Arrays
+
+Arrays are defined by its length and its type
+
+.code slices/example1.go /func example1/,/^}/
+
+Arrays can be declared and initialized at the same time
+
+.code slices/example1.go /func example2/,/^}/
+
+* Slices
+
+Slices provide dynamic views into the elements of an array
+
+.play slices/example2.go /func main/,/^}/
+
+In practice, slices are more commonly used than arrays
+
+* Exercise
+
+- Write a `for` loop to iterate over a slice
+
+* Range
+
+.play slices/example3.go /func main/,/^}/
 
 * Maps
