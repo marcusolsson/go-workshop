@@ -18,15 +18,6 @@ On a Mac, installing via Homebrew can be convenient:
 
     brew install go
 
-* Setting your GOPATH
-
-Since Go 1.8, the default `GOPATH` is
-
-- Unix: `$HOME/go`
-- Windows: `%USERPROFILE%\go`
-
-If you're using an earlier version, you'll need to manually set `GOPATH`
-
 * Installing Visual Studio Code
 
 * Download the latest version
@@ -39,17 +30,25 @@ If you're using an earlier version, you'll need to manually set `GOPATH`
 - Search for the Go extension (by lukehoban) and click 'Install'
 - Hit 'Reload' to activate the extension
 
-* Building your first application
-
 * Hello World
 
-- Create the following directory structure
+* Creating your first Go application
 
-    $ mkdir -p $GOPATH/src/github.com/yourname/hello
+- Create the following directory
+
+Mac/Linux: `$HOME/go/src/github.com/yourname/hello`
+
+Windows: `%USERPROFILE%\go\src\github.com\yourname\hello`
 
 - Open the directory in your editor
-- Create a file called `main.go` that contains:
+- Create a file called `main.go` 
+- VS Code: Install All Go tools when asked to
+- While installing, write the following to `main.go`:
 
 .code hello.go
 
-- VS Code: Install Go tools when asked to
+* Running the application
+
+- VS Code: Open the Integrated Terminal and type:
+
+    $ go run main.go
