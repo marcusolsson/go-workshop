@@ -205,6 +205,12 @@ Slices provide dynamic views into the elements of an array
 
 In practice, slices are more commonly used than arrays
 
+* Slices
+
+Use the built-in function `len()` to check the size of any slice or array
+
+.play slices/example4.go /func main/,/^}/
+
 * Exercise
 
 - Write a `for` loop to iterate over a slice
@@ -216,3 +222,27 @@ The `range` keyword can be used to loop over slices
 .play slices/example3.go /func main/,/^}/
 
 * Maps
+
+Declaring a map
+
+.code maps/example1.go /var customers/,/int/
+
+Initialize a map using `make`
+
+.code maps/example1.go /var customers/,/int/
+
+or by using a literal
+
+.code maps/example1.go /customers = map/,/}/
+
+* Maps
+
+Elements can be accessed using the `[]` operator
+.code maps/example1.go /v := customers/,/]/
+
+If key didn't exist, the zero value of that type will be returned
+
+Check if element exists
+.code maps/example1.go /v, ok/,/}/
+
+You can check the length of a map using the `len()` function
