@@ -22,15 +22,15 @@ If not explicitly initialized, variables will be initialized to their respective
 
 * Variables
 
-Inferring type
+Type will be inferred if none is defined
 
 .code variables/example1.go /START INFER OMIT/,/END INFER OMIT/
 
-Shorthand
+Since this is so common, there's even a shorthand for it
 
 .code variables/example1.go /START SHORT OMIT/,/END SHORT OMIT/
 
-* Exercises
+* Exercise
 
 - Will this run? If not, why? How do we fix it?
 
@@ -71,8 +71,17 @@ Test multiple conditions with `else` `if` and `else`
 * Loops
 
 There is only one looping construct, the `for` loop
+.code loops/example1.go /START FIRST OMIT/,/END FIRST OMIT/
 
-.code loops/example1.go /func example/,/^}/
+that can also be used as a `while` loop
+.code loops/example1.go /START SECOND OMIT/,/END SECOND OMIT/
+
+Omit the condition and you have yourself an infinite loop
+.code loops/example1.go /START THIRD OMIT/,/END THIRD OMIT/
+
+* Exercise
+
+- Write a function that loops ...
 
 * Struct types
 
@@ -172,6 +181,12 @@ Functions are not the only thing we can export.
 
 .code packages/example1.go /START STRUCT OMIT/,/END STRUCT OMIT/
 
+* Exercise
+
+- Create a new subdirectory `calc`, with the file `add.go`
+- In that file, create an exported function that returns the sum of two integers
+- In `main.go`, call the function to print out the sum of any two numbers
+
 * Arrays
 
 Arrays are defined by its length and its type
@@ -194,7 +209,9 @@ In practice, slices are more commonly used than arrays
 
 - Write a `for` loop to iterate over a slice
 
-* Range
+* Slices
+
+The `range` keyword can be used to loop over slices
 
 .play slices/example3.go /func main/,/^}/
 
