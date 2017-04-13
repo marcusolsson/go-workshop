@@ -26,8 +26,8 @@ func main() {
 	p.consumePotion()
 
 	if p.health == 100 {
-		fmt.Println(a.nickname, "lives to fight another day")
+		fmt.Println(p.nickname, "lives to fight another day")
 	} else {
-		fmt.Println(a.nickname, "still suffers")
+		fmt.Println(p.nickname, "still suffers")
 	}
 }

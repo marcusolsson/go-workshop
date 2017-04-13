@@ -17,5 +17,5 @@ func main() {
 		nickname: "Urgoth the Destroyer",
 	}
 
-	fmt.Println("Fearlessly", a.nickname, "dived into the abyss, screaming:", p.warcry())
+	fmt.Println("Fearlessly", p.nickname, "dived into the abyss, screaming:", p.warcry())
 }

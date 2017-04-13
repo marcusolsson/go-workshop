@@ -87,12 +87,13 @@ Omit the condition and you have yourself an infinite loop
 
 .code struct/example1.go /^type movie/,/^}/
 
-Structs can be initialized using struct literals.
+Declaring `struct` variables
+.code struct/example1.go /^var favoriteMovie/,/$/
 
+Structs can be initialized using struct literals.
 .code struct/example1.go /START INIT OMIT/,/END INIT OMIT/
 
 Individual fields can be accessed using the dot (`.`) operator.
-
 .code struct/example1.go /START GETSET OMIT/,/END GETSET OMIT/
 
 * Methods
@@ -163,46 +164,6 @@ No dependency between interface and implementation
 
 .code interfaces/example1.go /START EXAMPLE OMIT/,/END EXAMPLE OMIT/
 
-* Packages
-
-Packages are ...
-
-Every `.go` file must define the package it belongs to.
-
-.code packages/example1.go /START HELLO OMIT/,/END HELLO OMIT/ HLpackage
-
-* Packages
-
-Packages need to be imported before they can be used.
-
-.code packages/example1.go /START HELLO OMIT/,/END HELLO OMIT/ HLimport
-
-Package name is used to reference functions within that package.
-
-.code packages/example1.go /START HELLO OMIT/,/END HELLO OMIT/ HLuse
-
-* Exporting
-
-In order for other packages to use your function, it needs to be _exported_.
-
-Functions (and other identifiers) are exported by uppercasing the first letter.
-
-.code packages/example1.go /START EXPORT OMIT/,/END EXPORT OMIT/
-
-In other words, `Hello` will be part of your package _API_.
-
-* Exporting
-
-Functions are not the only thing we can export.
-
-.code packages/example1.go /START STRUCT OMIT/,/END STRUCT OMIT/
-
-* Exercise
-
-- Create a new subdirectory `calc`, with the file `add.go`
-- In that file, create an exported function that returns the sum of two integers
-- In `main.go`, call the function to print out the sum of any two numbers
-
 * Arrays
 
 Arrays are defined by its length and its type
@@ -262,3 +223,41 @@ Check if element exists
 .code maps/example1.go /v, ok/,/}/
 
 You can check the length of a map using the `len()` function
+
+* Packages
+
+All `*.go` files within a directory is part of the same _package_ and must define the name of the package they belong to.
+
+.code packages/example1.go /START HELLO OMIT/,/END HELLO OMIT/ HLpackage
+
+* Packages
+
+Packages need to be imported before they can be used.
+
+.code packages/example1.go /START HELLO OMIT/,/END HELLO OMIT/ HLimport
+
+Package name is used to reference functions within that package.
+
+.code packages/example1.go /START HELLO OMIT/,/END HELLO OMIT/ HLuse
+
+* Exporting
+
+In order for other packages to use your function, it needs to be _exported_.
+
+Functions (and other identifiers) are exported by uppercasing the first letter.
+
+.code packages/example1.go /START EXPORT OMIT/,/END EXPORT OMIT/
+
+In other words, `Hello` will be part of your package _API_.
+
+* Exporting
+
+Functions are not the only thing we can export.
+
+.code packages/example1.go /START STRUCT OMIT/,/END STRUCT OMIT/
+
+* Exercise
+
+- Create a new subdirectory `calc`, with the file `add.go`
+- In that file, create an exported function that returns the sum of two integers
+- In `main.go`, call the function to print out the sum of any two numbers

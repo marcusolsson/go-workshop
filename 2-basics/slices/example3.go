@@ -4,7 +4,7 @@ package main
 
 import "fmt"
 
-func main() { // OMIT
+func main() {
 	letters := []string{
 		"A", "B", "C",
 	}
@@ -16,4 +16,4 @@ func main() { // OMIT
 	for idx, letter := range letters {
 		fmt.Println(idx, letter)
 	}
-} // OMIT
+}

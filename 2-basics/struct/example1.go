@@ -5,6 +5,8 @@ type movie struct {
 	year  int
 }
 
+var favoriteMovie movie
+
 func example1() {
 	// START INIT OMIT
 	m := movie{
