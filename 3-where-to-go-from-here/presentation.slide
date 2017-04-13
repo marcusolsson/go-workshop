@@ -1,0 +1,35 @@
+Go Fundamentals
+Where to Go from here?
+
+Marcus Olsson
+Data Engineer
+Bonnier Broadcasting
+@marcusolsson
+
+* Resources
+
+Recommended reading order
+
+.link https://tour.golang.org The Go Tour
+.link https://golang.org/doc/code.html How to Write Go Code
+.link https://golang.org/doc/effective_go.html Effective Go
+
+You can find even more resources on the project's Github
+
+.link https://github.com/golang/go/wiki Go Wiki
+
+* Community
+
+Join the local community
+.link https://www.meetup.com/Go-Stockholm/ Go Stockholm Meetup group
+
+Join the international community
+.link https://forum.golangbridge.org/ Go Forum
+.link https://groups.google.com/forum/#!forum/golang-nuts Mailing list
+.link https://invite.slack.golangbridge.org/ Gophers Slack
+
+Make sure you join us on Slack:
+
+- `#stockholm`
+- `#sweden`
+
