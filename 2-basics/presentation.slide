@@ -102,6 +102,14 @@ A method is a function with a defined _receiver_.
 .code methods/example1.go /START METHOD OMIT/,/END METHOD OMIT/
 .play methods/example1.go /^func main/,/^}/
 
+* Exercise
+
+- Write a struct `player` with two integer fields
+- Implement a method that returns the player's war cry as a string
+
+Example usage:
+.play methods/exercise1.go /func main/,/^}/
+
 * Methods
 
 But what about _modifying_ the struct from its method?
@@ -132,6 +140,14 @@ We'll make the method receiver into a pointer instead.
 
 .code methods/example3.go /rename/,/^}/
 .play methods/example3.go /^func main/,/^}/
+
+* Exercise
+
+- Add a new field called `health` to your player struct
+- Add a method `consumePotion` that restores full health to the player
+
+Example usage:
+.play methods/example4.go /^func main/,/^}/
 
 * Interfaces
 
