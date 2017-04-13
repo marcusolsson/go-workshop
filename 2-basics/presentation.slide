@@ -30,12 +30,12 @@ Since this is so common, there's even a shorthand for it
 
 .code variables/example1.go /START SHORT OMIT/,/END SHORT OMIT/
 
-* Exercise
+* Exercise: variables
 
-- Will this run? If not, why? How do we fix it?
-
+- Open the `hello` exercise in your editor
 .play variables/exercise1.go
 
+- Will this run? If not, why? How do we fix it?
 - Try removing the `fmt.Println` line. Will it still run?
 
 * Functions
@@ -43,19 +43,15 @@ Since this is so common, there's even a shorthand for it
 .code functions/example1.go /^func hello/,/^}/
 
 Arguments with same type can be written more concisely.
-
 .code functions/example1.go /^func add/,/^}/
 
 Multiple return values
-
 .code functions/example1.go /^func swap/,/^}/
 
-* Exercise
+* Exercise: functions
 
+- Open the `functions` exercise in your editor
 - Write a function that takes a first name and last name, and returns the full name
-
-.code functions/exercise1.go
-
 - Try switching place of the two functions. Does it matter if the function is defined before or after it's being used?
 
 * If
@@ -79,9 +75,9 @@ that can also be used as a `while` loop
 Omit the condition and you have yourself an infinite loop
 .code loops/example1.go /START THIRD OMIT/,/END THIRD OMIT/
 
-* Exercise
+* Exercise: loops
 
-- Write a function that loops ...
+- Open the `loops` exercise in your editor
 
 * Struct types
 
@@ -103,9 +99,10 @@ A method is a function with a defined _receiver_.
 .code methods/example1.go /START METHOD OMIT/,/END METHOD OMIT/
 .play methods/example1.go /^func main/,/^}/
 
-* Exercise
+* Exercise: warcry
 
-- Write a struct `player` with two integer fields
+- Open the `warcry` exercise in your editor
+- Write a struct `player` with a `nickname` field
 - Implement a method that returns the player's war cry as a string
 
 Example usage:
@@ -142,8 +139,9 @@ We'll make the method receiver into a pointer instead.
 .code methods/example3.go /rename/,/^}/
 .play methods/example3.go /^func main/,/^}/
 
-* Exercise
+* Exercise: potion
 
+- Open the `potion` exercise in your editor
 - Add a new field called `health` to your player struct
 - Add a method `consumePotion` that restores full health to the player
 
@@ -188,9 +186,10 @@ Use the built-in function `len()` to check the size of any slice or array
 
 .play slices/example4.go /func main/,/^}/
 
-* Exercise
+* Exercise: maximum
 
-- Write a `for` loop to iterate over a slice
+- Open the `maximum` exercise in your editor
+- Write a function to find the maximum integer in a slice
 
 * Slices
 
@@ -256,8 +255,8 @@ Functions are not the only thing we can export.
 
 .code packages/example1.go /START STRUCT OMIT/,/END STRUCT OMIT/
 
-* Exercise
+* Exercise: packages
 
-- Create a new subdirectory `calc`, with the file `add.go`
-- In that file, create an exported function that returns the sum of two integers
+- Open the `packages` exercise in your editor
+- In `calc/add.go`, create an exported function that returns the sum of two integers
 - In `main.go`, call the function to print out the sum of any two numbers

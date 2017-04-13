@@ -32,21 +32,13 @@ Install the Go extension
 
 * Creating your first Go application
 
-- Create the following directory
-
-Mac/Linux: `$HOME/go/src/github.com/yourname/hello`
-
-Windows: `%USERPROFILE%\go\src\github.com\yourname\hello`
-
-- Open the directory in your editor
-- Create a file called `main.go` 
-- VS Code: Install All Go tools when asked to
-- While installing, write the following to `main.go`:
-
-.code hello.go
-
-* Running the application
-
 - VS Code: Open the Integrated Terminal and type:
 
-    $ go run main.go
+    $ go get github.com/marcusolsson/go-workshop-exercises
+
+- Open the `hello` exercise in your editor
+- VS Code: Install All Go tools when asked to
+- In the terminal, type the following
+
+    $ go run hello.go
+
