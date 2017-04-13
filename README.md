@@ -1,5 +1,7 @@
 # Go Workshop
 
+This is the material for a roughly 3 hour long workshop to get attendees started using Go.
+
 ## Why Go
 
 This presentation is intended to give the audience an understanding of what makes Go important.
