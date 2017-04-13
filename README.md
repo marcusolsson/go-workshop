@@ -22,7 +22,7 @@ This presentation is intended to give a overview of the language syntax.
 
 This presentation is intended to recommend resources and where to find fellow gophers.
 
-[View the slides online](https://talks.godoc.org/github.com/marcusolsson/go-workshop/3-basics/presentation.slide)
+[View the slides online](https://talks.godoc.org/github.com/marcusolsson/go-workshop/3-where-to-go-from-here/presentation.slide)
 
 ## Exercises
 
