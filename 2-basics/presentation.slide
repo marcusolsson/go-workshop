@@ -99,6 +99,10 @@ A method is a function with a defined _receiver_.
 .code methods/example1.go /START METHOD OMIT/,/END METHOD OMIT/
 .play methods/example1.go /^func main/,/^}/
 
+* Methods
+
+Any type within the same package can receive a method
+
 * Exercise: warcry
 
 - Open the `warcry` exercise in your editor
@@ -161,6 +165,16 @@ Interfaces in Go are implemented _implicitly_.
 No dependency between interface and implementation
 
 .code interfaces/example1.go /START EXAMPLE OMIT/,/END EXAMPLE OMIT/
+
+* Error handling
+
+The `error` type is an interface
+
+.code error/example1.go /type error/,/^}/
+
+Errors are returned just like any other value
+
+.code error/example1.go /func add/,/^}/
 
 * Arrays
 

@@ -6,5 +6,115 @@ Data Engineer
 Bonnier Broadcasting
 @marcusolsson
 
-* Why Go?
+* What is Go?
 
+Go is a modern, general-purpose programming language.
+
+: Produces a single binary
+- Compiled
+: The type of a variable is known at compile time 
+- Statically typed  
+- Garbage collected
+- Concurrent
+- Simple
+- Productive
+
+
+* History
+
+- Project started in 2007 by Griesemer, Pike and Thompson
+- Open sourced in 2009
+- Version 1.0 was released in 2012
+
+.link https://github.com/golang/go/wiki/GoUsers Who's using Go?
+
+* Made with a purpose
+
+Designed by and for people who read and write large software systems
+
+Must be able to scale to 
+
+- large code bases
+- large teams
+- large number of dependencies
+
+Must be familiar
+
+* Go is boring
+
+Go's purpose is _not_ research into programming language design
+
+Your favorite language feature is most likely not in Go
+
+Use only tried and tested features and focus on developer productivity
+
+Optimized for reading rather than writing for code
+
+* Made to be modern
+
+Should be
+
+- suitable for multicore machines
+- suitable for networked machines
+- suitable for the web
+
+* Object orientation
+
+Go is object-oriented but ... 
+
+- no classes
+- no subclassing
+
+Even basic types like integers and strings can have methods
+
+* go tool
+
+The go tool is the standard tool for building, testing, and installing Go programs
+
+To compile and run `hello.go`:
+
+    $ go run hello.go
+
+Run all tests in the current directory:
+
+    $ go test
+
+To fetch, build and install a package:
+
+    $ go get github.com/sirupsen/logrus
+
+* gofmt
+
+Automatic code formatting was intended from the beginning
+
+Eliminates fruitless discussion about style
+
+Each code base feels familiar
+
+"Gofmt's style is no one's favorite, yet gofmt is everyone's favorite." - Go proverb
+
+* Godoc
+
+Godoc extracts documentation from your Go code
+
+.link https://godoc.org/fmt https://godoc.org
+
+Documentation that lives with code is easy to keep up-to-date.
+
+* Workspaces 
+
+No build scripts are needed
+
+The go tool accomplishes this by requring a predefined directory structure
+
+    go/
+      bin # executable binaries
+      pkg # compiled object files
+      src # source code
+
+The current workspace is set using the `GOPATH` environment variable.
+
+Since Go 1.8, the `GOPATH` is by default set to:
+
+- Linux/Mac: `$HOME/go`
+- Windows: `%USERPROFILE%\go`
