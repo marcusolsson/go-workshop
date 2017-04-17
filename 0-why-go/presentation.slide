@@ -10,35 +10,32 @@ Bonnier Broadcasting
 
 Go is a modern, general-purpose programming language.
 
-: Produces a single binary
 - Compiled
-: The type of a variable is known at compile time 
 - Statically typed  
 - Garbage collected
 - Concurrent
 - Simple
 - Productive
 
-
 * History
 
-- Project started in 2007 by Griesemer, Pike and Thompson
+- Project started in 2007 by Griesemer, Pike and Thompson, at Google
 - Open sourced in 2009
 - Version 1.0 was released in 2012
 
-.link https://github.com/golang/go/wiki/GoUsers Who's using Go?
+* Who's using Go?
 
-* Made with a purpose
+.link https://github.com/golang/go/wiki/GoUsers GoUsers
+
+* Design considerations
 
 Designed by and for people who read and write large software systems
 
-Must be able to scale to 
+Designed to be able to scale to:
 
 - large code bases
 - large teams
 - large number of dependencies
-
-Must be familiar
 
 * Go is boring
 
@@ -46,13 +43,13 @@ Go's purpose is _not_ research into programming language design
 
 Your favorite language feature is most likely not in Go
 
-Use only tried and tested features and focus on developer productivity
+Designed to only use tried and tested features and focus on developer productivity
 
 Optimized for reading rather than writing for code
 
-* Made to be modern
+* Designed to be modern
 
-Should be
+Should be:
 
 - suitable for multicore machines
 - suitable for networked machines
@@ -60,12 +57,13 @@ Should be
 
 * Object orientation
 
-Go is object-oriented but ... 
+Go is object-oriented but:
 
 - no classes
 - no subclassing
+- implicit interfaces
 
-Even basic types like integers and strings can have methods
+Simple pieces connected by small interfaces
 
 * go tool
 
@@ -118,3 +116,13 @@ Since Go 1.8, the `GOPATH` is by default set to:
 
 - Linux/Mac: `$HOME/go`
 - Windows: `%USERPROFILE%\go`
+
+* This workshop
+
+Intended to give you a head start
+
+After today you will have learned
+
+- basic workflow
+- basic language syntax
+- common idioms
