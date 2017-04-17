@@ -9,7 +9,7 @@ type user struct {
 
 func example() {
 	// START DECL OMIT
-	var ptr *user
+	var ptr *user // nil
 	// END DECL OMIT
 
 	// START REF OMIT

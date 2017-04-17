@@ -54,6 +54,12 @@ Multiple return values
 - Write a function that takes a first name and last name, and returns the full name
 - Try switching place of the two functions. Does it matter if the function is defined before or after it's being used?
 
+* Anonymous functions
+
+Useful for defining functions without having to name them
+
+.play functions/example2.go /^func main/,/^}/
+
 * If
 
 No parentheses needed
@@ -165,6 +171,12 @@ Interfaces in Go are implemented _implicitly_.
 No dependency between interface and implementation
 
 .code interfaces/example1.go /START EXAMPLE OMIT/,/END EXAMPLE OMIT/
+
+* Exercise: warcrier
+
+- Open the `warcrier` exercise in your editor
+- Create an interface called `warcrier` with one `warcry()` method
+- Add a new struct called `enemy` that also implements the `warcrier` interface
 
 * Error handling
 
