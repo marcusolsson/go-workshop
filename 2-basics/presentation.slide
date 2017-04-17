@@ -201,6 +201,12 @@ Use the `defer` keyword to make sure a function is called when a function exits
 
 .code defer/example2.go /func loadConfig/,/^}/
 
+* Pro tip: Deferring anonymous functions
+
+Can be used for more involved clean up work
+
+.play defer/example3.go /func main/,/^}/
+
 * Arrays
 
 Arrays are defined by its length and its type
