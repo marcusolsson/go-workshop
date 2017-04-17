@@ -40,5 +40,5 @@ Install the Go extension
 - VS Code: Install All Go tools when asked to
 - In the terminal, type the following
 
-    $ go run hello.go
+    $ go run main.go
 

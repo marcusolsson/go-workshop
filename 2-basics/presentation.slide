@@ -32,7 +32,7 @@ Since this is so common, there's even a shorthand for it
 
 * Exercise: variables
 
-- Open the `hello` exercise in your editor
+- Open the `variables` exercise in your editor
 - Will this run? If not, why? How do we fix it?
 - Try removing the `fmt.Println` line. Will it still run?
 
@@ -49,8 +49,11 @@ Multiple return values
 * Exercise: functions
 
 - Open the `functions` exercise in your editor
+- Run the following in the directory
+
+    $ go test
+
 - Write a function that takes a first name and last name, and returns the full name
-- Try switching place of the two functions. Does it matter if the function is defined before or after it's being used?
 
 * Pro tip: Anonymous functions
 
@@ -109,12 +112,6 @@ A method is a function with a defined _receiver_.
 - Write a struct `player` with a `nickname` field
 - Implement a method that returns the player's war cry as a string
 
-* Pro tip: Methods on basic types
-
-Any type within the same package can receive a method
-
-.play methods/example5.go /START OMIT/,/END OMIT/
-
 * Methods
 
 But what about _modifying_ the struct from its method?
@@ -126,6 +123,8 @@ The `rename` method is being passed a _copy_ of the `user` struct.
 This is not what we wanted.
 
 * Pointers
+
+TODO: What is pointers used for?
 
 A pointer is its own type
 
