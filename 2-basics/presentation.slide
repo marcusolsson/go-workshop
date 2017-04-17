@@ -33,8 +33,6 @@ Since this is so common, there's even a shorthand for it
 * Exercise: variables
 
 - Open the `hello` exercise in your editor
-.play variables/exercise1.go
-
 - Will this run? If not, why? How do we fix it?
 - Try removing the `fmt.Println` line. Will it still run?
 
@@ -114,9 +112,6 @@ Any type within the same package can receive a method
 - Open the `warcry` exercise in your editor
 - Write a struct `player` with a `nickname` field
 - Implement a method that returns the player's war cry as a string
-
-Example usage:
-.play methods/exercise1.go /func main/,/^}/
 
 * Methods
 
