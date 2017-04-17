@@ -52,7 +52,7 @@ Multiple return values
 - Write a function that takes a first name and last name, and returns the full name
 - Try switching place of the two functions. Does it matter if the function is defined before or after it's being used?
 
-* Anonymous functions
+* Pro tip: Anonymous functions
 
 Useful for defining functions without having to name them
 
@@ -103,15 +103,17 @@ A method is a function with a defined _receiver_.
 .code methods/example1.go /START METHOD OMIT/,/END METHOD OMIT/
 .play methods/example1.go /^func main/,/^}/
 
-* Methods
-
-Any type within the same package can receive a method
-
 * Exercise: warcry
 
 - Open the `warcry` exercise in your editor
 - Write a struct `player` with a `nickname` field
 - Implement a method that returns the player's war cry as a string
+
+* Pro tip: Methods on basic types
+
+Any type within the same package can receive a method
+
+.play methods/example5.go /START OMIT/,/END OMIT/
 
 * Methods
 
@@ -157,6 +159,10 @@ Example usage:
 
 .code interfaces/example1.go /^type notifier/,/^}/
 
+Zero value for an interface is `nil`
+
+.code interfaces/example1.go /var n/,/$/
+
 Interfaces in Go are implemented _implicitly_.
 
 .code interfaces/example1.go /START IMPL OMIT/,/END IMPL OMIT/
@@ -175,13 +181,25 @@ No dependency between interface and implementation
 
 * Error handling
 
-The `error` type is an interface
+The `error` type is a built-in interface
 
 .code error/example1.go /type error/,/^}/
 
 Errors are returned just like any other value
 
 .code error/example1.go /func add/,/^}/
+
+* Defer
+
+Have you ever forgot to free that resource?
+
+.code defer/example1.go /func loadConfig/,/^}/
+
+* Defer
+
+Use the `defer` keyword to make sure a function is called when a function exits
+
+.code defer/example2.go /func loadConfig/,/^}/
 
 * Arrays
 

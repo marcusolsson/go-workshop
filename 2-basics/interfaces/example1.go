@@ -6,6 +6,8 @@ type notifier interface {
 	notify()
 }
 
+var n notifier // nil
+
 // START IMPL OMIT
 type emailNotifier struct {
 	email string
