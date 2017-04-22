@@ -28,7 +28,7 @@ func main() {
 	sendNotification(en)
 }
 
-func sendNotification(n notifier) { // HL
+func sendNotification(n notifier) {
 	n.notify()
 }
 

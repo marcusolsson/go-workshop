@@ -157,29 +157,37 @@ Example usage:
 
 * Interfaces
 
-Interfaces are sets of methods that describe behavior of types
+Interfaces are sets of methods that describe _behavior_ of types
 
 .code interfaces/example1.go /^type notifier/,/^}/
 
-Zero value for an interface is `nil`
-
 .code interfaces/example1.go /var n/,/$/
 
-Interfaces in Go are satisfied _implicitly_
+Rather than based on the _data_ a type has, we can create abstractions based on what the type can _do_
+
+.code interfaces/example1.go /^func sendNotification/,/^}/
+
+* Interfaces
+
+Interfaces in Go are satisfied _implicitly_ (no `implements` keyword)
+
+Meaning, `emailNotifier` doesn't actually know about any of the interfaces it satisfies
 
 .code interfaces/example1.go /START IMPL OMIT/,/END IMPL OMIT/
 
 * Interfaces
 
-No dependency between interface and implementation
+Any type with a method `notify()` can be passed to the `sendNotification` function
 
 .code interfaces/example1.go /START EXAMPLE OMIT/,/END EXAMPLE OMIT/
+
+No dependency between interface and implementation (yay!)
 
 * Exercise: warcrier
 
 - Open the `warcrier` exercise in your editor
 - Create an interface called `warcrier` with one `warcry()` method
-- Add a new struct called `enemy` that also implements the `warcrier` interface
+- Add a new struct called `enemy` that also satisfies the `warcrier` interface
 
 * Error handling
 
@@ -218,6 +226,12 @@ Use the `defer` keyword to make sure a function is called when a function exits
 Can be used for more involved clean up work
 
 .play defer/example3.go /func main/,/^}/
+
+* Exercise: jump
+
+- Open the `jump` exercise in your editor
+- Add code to check if player is to tired to jump
+- Handle the error by printing an excuse befitting of your player
 
 * Arrays
 
