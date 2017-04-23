@@ -133,7 +133,7 @@ A pointer is its own type
 
 Ampersand (`&`) is used to fetch a pointer to an existing value.
 
-.play pointers/example1.go /START REF OMIT/,/END REF OMIT/
+.code pointers/example1.go /START REF OMIT/,/END REF OMIT/
 
 Asterisk (`*`) is used to fetch, or _dereference_, the value a pointer points to.
 
@@ -262,7 +262,7 @@ Use the built-in function `len()` to check the size of any slice or array
 - Open the `maximum` exercise in your editor
 - Write a function to find the maximum integer in a slice
 
-* Slices
+* Pro tip: Ranging over slices
 
 The `range` keyword can be used to loop over slices
 
@@ -276,7 +276,7 @@ Declaring a map
 
 Initialize a map using `make`
 
-.code maps/example1.go /var customers/,/int/
+.code maps/example1.go /customers = make/,/int/
 
 or by using a literal
 
