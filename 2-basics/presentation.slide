@@ -276,45 +276,19 @@ The `range` keyword can be used to loop over slices
 
 .play slices/example3.go /func main/,/^}/
 
-* Maps
-
-Declaring a map
-
-.code maps/example1.go /var customers/,/int/
-
-Initialize a map using `make`
-
-.code maps/example1.go /customers = make/,/int/
-
-or by using a literal
-
-.code maps/example1.go /customers = map/,/}/
-
-* Maps
-
-Elements can be accessed using the `[]` operator
-.code maps/example1.go /v := customers/,/]/
-
-If key didn't exist, the zero value of that type will be returned
-
-Check if element exists
-.code maps/example1.go /v, ok/,/}/
-
-You can check the length of a map using the `len()` function
-
 * Packages
 
 All `*.go` files within a directory is part of the same _package_ and must define the name of the package they belong to.
 
 .code packages/example1.go /START HELLO OMIT/,/END HELLO OMIT/ HLpackage
 
-* Packages
+* Importing packages
 
-Packages need to be imported before they can be used.
+Packages need to be imported before they can be used
 
 .code packages/example1.go /START HELLO OMIT/,/END HELLO OMIT/ HLimport
 
-Package name is used to reference functions within that package.
+Package name is used to reference functions within that package
 
 .code packages/example1.go /START HELLO OMIT/,/END HELLO OMIT/ HLuse
 
@@ -326,13 +300,40 @@ Functions (and other identifiers) are exported by uppercasing the first letter.
 
 .code packages/example1.go /START EXPORT OMIT/,/END EXPORT OMIT/
 
-In other words, `Hello` will be part of your package _API_.
+In other words, `Hello` will be part of your package _API_
 
 * Exporting
 
 Functions are not the only thing we can export.
 
 .code packages/example1.go /START STRUCT OMIT/,/END STRUCT OMIT/
+
+* Exercise: ids
+
+- Open the `ids` exercise in your editor
+- Use the `strings` package to create URL-friendly IDs from movie titles
+
+Hint: Check out the docs for the `ToLower`, `Fields` and `Join` functions at godoc.org.
+
+.link https://godoc.org/strings godoc.org
+
+* Importing third-party packages
+
+Package needs to be in your workspace
+
+    go get github.com/sirupsen/logrus
+
+An import path is uniquely identified by its location in a workspace
+
+A packages located in:
+
+    $GOPATH/src/github.com/sirupsen/logrus    
+
+can be imported using its relative path
+
+    import "github.com/sirupsen/logrus"
+
+
 
 * Exercise: packages
 
