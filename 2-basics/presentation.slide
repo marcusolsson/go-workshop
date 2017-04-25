@@ -237,25 +237,33 @@ Can be used for more involved clean up work
 
 Arrays are defined by its length and its type
 
-.code slices/example1.go /func example1/,/^}/
+.code slices/example1.go /START EX1 OMIT/,/END EX1 OMIT/
 
-Arrays can be declared and initialized at the same time
+Arrays can also be initialized using an array literal
 
-.code slices/example1.go /func example2/,/^}/
+.code slices/example1.go /START EX2 OMIT/,/END EX2 OMIT/
+
+The built-in function `len()` returns the length of the array
+
+.code slices/example1.go /START EX3 OMIT/,/END EX3 OMIT/
+
+Arrays are values, and will be copied whenever passed around
 
 * Slices
 
 Slices provide dynamic views into the elements of an array
 
-.play slices/example2.go /func main/,/^}/
+.code slices/example2.go /START EX1 OMIT/,/END EX1 OMIT/
+
+Use a slice literal to allocate the underlying array
+
+.code slices/example2.go /START EX2 OMIT/,/END EX2 OMIT/
+
+Use the built-in `make()` function when you know the size in advance
+
+.code slices/example2.go /START EX3 OMIT/,/END EX3 OMIT/
 
 In practice, slices are more commonly used than arrays
-
-* Slices
-
-Use the built-in function `len()` to check the size of any slice or array
-
-.play slices/example4.go /func main/,/^}/
 
 * Exercise: maximum
 

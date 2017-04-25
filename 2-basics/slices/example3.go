@@ -9,7 +9,7 @@ func main() {
 		"A", "B", "C",
 	}
 
-	for i := 0; i < len(letters); i++ {
+	for idx := 0; idx < len(letters); idx++ {
 		fmt.Println(i, letters[i])
 	}
 
