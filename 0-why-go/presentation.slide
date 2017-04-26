@@ -17,13 +17,23 @@ Go is a modern, general-purpose programming language.
 - Simple
 - Productive
 
+* What is Go?
+
+Go is object-oriented but:
+
+- no classes
+- no subclassing
+- implicit interfaces
+
+Simple pieces connected by small interfaces
+
 * History
 
 - Project started in 2007 by Griesemer, Pike and Thompson, at Google
 - Open sourced in 2009
 - Version 1.0 was released in 2012
 
-* Design considerations
+* Designed to scale
 
 Designed by and for people who read and write large software systems
 
@@ -33,16 +43,6 @@ Designed to be able to scale to:
 - large teams
 - large number of dependencies
 
-* Go is boring
-
-Go's purpose is _not_ research into programming language design
-
-Your favorite language feature is most likely not in Go
-
-Designed to only use tried and tested features and focus on developer productivity
-
-Optimized for reading rather than writing for code
-
 * Designed to be modern
 
 Should be:
@@ -51,15 +51,7 @@ Should be:
 - suitable for networked machines
 - suitable for the web
 
-* Object orientation
-
-Go is object-oriented but:
-
-- no classes
-- no subclassing
-- implicit interfaces
-
-Simple pieces connected by small interfaces
+* Designed to be productive
 
 * go tool
 
@@ -76,6 +68,24 @@ Run all tests in the current directory:
 To fetch, build and install a package:
 
     $ go get github.com/sirupsen/logrus
+
+* Workspaces 
+
+No build scripts are needed
+
+The go tool accomplishes this by requring a predefined directory structure
+
+    go/
+      bin # executable binaries
+      pkg # compiled object files
+      src # source code
+
+The current workspace is set using the `GOPATH` environment variable.
+
+Since Go 1.8, the `GOPATH` is by default set to:
+
+- Linux/Mac: `$HOME/go`
+- Windows: `%USERPROFILE%\go`
 
 * gofmt
 
@@ -95,23 +105,15 @@ Godoc extracts documentation from your Go code
 
 Documentation that lives with code is easy to keep up-to-date.
 
-* Workspaces 
+* Go is boring
 
-No build scripts are needed
+Go's purpose is _not_ research into programming language design
 
-The go tool accomplishes this by requring a predefined directory structure
+Optimized for reading rather than writing for code
 
-    go/
-      bin # executable binaries
-      pkg # compiled object files
-      src # source code
+Designed to only use tried and tested features and focus on developer productivity
 
-The current workspace is set using the `GOPATH` environment variable.
-
-Since Go 1.8, the `GOPATH` is by default set to:
-
-- Linux/Mac: `$HOME/go`
-- Windows: `%USERPROFILE%\go`
+Your favorite language feature is most likely not in Go
 
 * This workshop
 
