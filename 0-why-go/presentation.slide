@@ -23,10 +23,6 @@ Go is a modern, general-purpose programming language.
 - Open sourced in 2009
 - Version 1.0 was released in 2012
 
-* Who's using Go?
-
-.link https://github.com/golang/go/wiki/GoUsers GoUsers
-
 * Design considerations
 
 Designed by and for people who read and write large software systems
