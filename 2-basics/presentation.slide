@@ -337,6 +337,6 @@ can be imported using its relative path
 
 * Exercise: packages
 
-- Open the `packages` exercise in your editor
+- Open the `calculator` exercise in your editor
 - In `calc/add.go`, create an exported function that returns the sum of two integers
 - In `main.go`, call the function to print out the sum of any two numbers
