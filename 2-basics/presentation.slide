@@ -211,7 +211,7 @@ Errors are handled explicitly
 
 * Defer
 
-Have you ever forgot to free that resource?
+Have you ever forgotten to free that resource?
 
 .code defer/example1.go /func loadConfig/,/^}/
 
@@ -223,23 +223,23 @@ Use the `defer` keyword to make sure a function is called when a function exits
 
 * Pro tip: Deferring anonymous functions
 
-Can be used for more involved clean up work
+Can be used for more involved clean-up work
 
 .play defer/example3.go /func main/,/^}/
 
 * Exercise: jump
 
 - Open the `jump` exercise in your editor
-- Add code to check if player is to tired to jump
+- Add code to check if player is too tired to jump
 - Handle the error by printing an excuse befitting of your player
 
 * Arrays
 
-Arrays are defined by its length and its type
+An array is defined by its length and its type
 
 .code slices/example1.go /START EX1 OMIT/,/END EX1 OMIT/
 
-Arrays can also be initialized using an array literal
+An array can also be initialized using an array literal
 
 .code slices/example1.go /START EX2 OMIT/,/END EX2 OMIT/
 
@@ -268,7 +268,7 @@ In practice, slices are more commonly used than arrays
 * Exercise: maximum
 
 - Open the `maximum` exercise in your editor
-- Write a function to find the maximum integer in a slice
+- Write a function to find the largest integer in a slice
 
 * Pro tip: Ranging over slices
 
