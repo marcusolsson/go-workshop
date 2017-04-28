@@ -157,13 +157,13 @@ Example usage:
 
 * Interfaces
 
-Interfaces are sets of methods that describe _behavior_ of types
+Interfaces are sets of methods that describe _behavior_ of types.
 
 .code interfaces/example1.go /^type notifier/,/^}/
 
 .code interfaces/example1.go /var n/,/$/
 
-Rather than based on the _data_ a type has, we can create abstractions based on what the type can _do_
+Rather than based on the _data_ a type has, we can create abstractions based on what the type can _do_.
 
 .code interfaces/example1.go /^func sendNotification/,/^}/
 
