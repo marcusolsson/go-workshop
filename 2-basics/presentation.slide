@@ -85,7 +85,7 @@ Omit the condition and you have yourself an infinite loop
 * Exercise: loops
 
 - Open the `loops` exercise in your editor
-- Write a program that prints all numbers between 0-10, except 4 and 8.
+- Write a program that prints the numbers 0 to 10, except 4 and 8.
 
 * Struct types
 
