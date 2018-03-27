@@ -85,7 +85,7 @@ Omit the condition and you have yourself an infinite loop
 * Exercise: loops
 
 - Open the `loops` exercise in your editor
-- Write a program that prints the numbers 0 to 10, except 4 and 8.
+- Write a program that loops through 0 until 10 and outputs whether a number is even or odd.
 
 * Struct types
 
@@ -107,11 +107,11 @@ A method is a function with a defined _receiver_.
 .code methods/example1.go /START METHOD OMIT/,/END METHOD OMIT/
 .play methods/example1.go /^func main/,/^}/
 
-* Exercise: warcry
+* Exercise: greeter
 
-- Open the `warcry` exercise in your editor
-- Write a struct `player` with a `nickname` field
-- Implement a method that returns the player's war cry as a string
+- Open the `greeter` exercise in your editor
+- Write a struct `greeter` with a string field `name`
+- Implement a method that returns a greeting based on the name
 
 * Methods
 
@@ -146,14 +146,10 @@ We'll make the method receiver into a pointer instead.
 .code methods/example3.go /rename/,/^}/
 .play methods/example3.go /^func main/,/^}/
 
-* Exercise: potion
+* Exercise: parcel
 
-- Open the `potion` exercise in your editor
-- Add a new field called `health` to your player struct
-- Add a method `consumePotion` that restores full health to the player
-
-Example usage:
-.play methods/example4.go /^func main/,/^}/
+- Open the `parcel` exercise in your editor
+- Implement a `deliver` method on the parcel that marks the parcel as delivered on a successful delivery
 
 * Interfaces
 
