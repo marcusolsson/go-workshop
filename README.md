@@ -30,4 +30,4 @@ This presentation is intended to recommend resources and where to find fellow go
 
 The exercises used in the presentations are available [here](https://github.com/marcusolsson/go-workshop-exercises). Get them by running the following:
 
-    $ go get github.com/marcusolsson/go-workshop-exercises
+    $ go get -d github.com/marcusolsson/go-workshop-exercises/...
