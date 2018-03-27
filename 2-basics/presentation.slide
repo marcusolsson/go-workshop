@@ -85,7 +85,7 @@ Omit the condition and you have yourself an infinite loop
 * Exercise: loops
 
 - Open the `loops` exercise in your editor
-- Write a program that loops through 0 until 10 and outputs whether a number is even or odd.
+- Write a program that takes two integers and returns the first integer that is a multiple of both 5 and 7 within that range.
 
 * Struct types
 
@@ -112,122 +112,6 @@ A method is a function with a defined _receiver_.
 - Open the `greeter` exercise in your editor
 - Write a struct `greeter` with a string field `name`
 - Implement a method that returns a greeting based on the name
-
-* Methods
-
-But what about _modifying_ the struct from its method?
-
-.code methods/example2.go /rename/,/^}/
-.play methods/example2.go /^func main/,/^}/
-
-The `rename` method is being passed a _copy_ of the `user` struct.
-This is not what we wanted.
-
-* Pointers
-
-Pointers allow you to to pass references to values within your application
-
-A pointer is its own type
-
-.code pointers/example1.go /START DECL OMIT/,/END DECL OMIT/
-
-Ampersand (`&`) is used to fetch a pointer to an existing value.
-
-.code pointers/example1.go /START REF OMIT/,/END REF OMIT/
-
-Asterisk (`*`) is used to _dereference_ a pointer to retrieve the value.
-
-.code pointers/example1.go /START DEREF OMIT/,/END DEREF OMIT/
-
-* Methods (revisited)
-
-We'll make the method receiver into a pointer instead.
-
-.code methods/example3.go /rename/,/^}/
-.play methods/example3.go /^func main/,/^}/
-
-* Exercise: parcel
-
-- Open the `parcel` exercise in your editor
-- Implement a `deliver` method on the parcel that marks the parcel as delivered on a successful delivery
-
-* Interfaces
-
-Interfaces are sets of methods that describe _behavior_ of types.
-
-.code interfaces/example1.go /^type notifier/,/^}/
-
-.code interfaces/example1.go /var n/,/$/
-
-Rather than based on the _data_ a type has, we can create abstractions based on what the type can _do_.
-
-.code interfaces/example1.go /^func sendNotification/,/^}/
-
-* Interfaces
-
-Interfaces in Go are satisfied _implicitly_ (no `implements` keyword)
-
-Meaning, `emailNotifier` doesn't actually know about any of the interfaces it satisfies
-
-.code interfaces/example1.go /START IMPL OMIT/,/END IMPL OMIT/
-
-* Interfaces
-
-Any type with a method `notify()` can be passed to the `sendNotification` function
-
-.code interfaces/example1.go /START EXAMPLE OMIT/,/END EXAMPLE OMIT/
-
-No dependency between interface and implementation (yay!)
-
-* Exercise: warcrier
-
-- Open the `warcrier` exercise in your editor
-- Create an interface called `warcrier` with one `warcry()` method
-- Add a new struct called `enemy` that also satisfies the `warcrier` interface
-
-* Error handling
-
-The `error` type is a built-in interface
-
-.code error/example1.go /type error/,/^}/
-
-Create custom errors by implementing the `Error()` method
-
-.code error/example1.go /START MYERROR OMIT/,/END MYERROR OMIT/
-
-* Error handling
-
-Errors are returned just like any other value
-
-.code error/example1.go /func add/,/^}/
-
-Errors are handled explicitly
-
-.code error/example1.go /START HANDLE OMIT/,/END HANDLE OMIT/
-
-* Defer
-
-Have you ever forgotten to free that resource?
-
-.code defer/example1.go /func loadConfig/,/^}/
-
-* Defer
-
-Use the `defer` keyword to make sure a function is called when a function exits
-
-.code defer/example2.go /func loadConfig/,/^}/
-
-* Pro tip: Deferring anonymous functions
-
-Can be used for more involved clean-up work
-
-.play defer/example3.go /func main/,/^}/
-
-* Exercise: jump
-
-- Open the `jump` exercise in your editor
-- Add code to check if player is too tired to jump
-- Handle the error by printing an excuse befitting of your player
 
 * Arrays
 
@@ -288,6 +172,31 @@ Package name is used to reference functions within that package
 
 .code packages/example1.go /START HELLO OMIT/,/END HELLO OMIT/ HLuse
 
+* Exercise: ids
+
+- Open the `ids` exercise in your editor
+- Use the `strings` package to create URL-friendly IDs from movie titles
+
+Hint: Check out the docs for the `ToLower`, `Fields` and `Join` functions at godoc.org.
+
+.link https://godoc.org/strings godoc.org
+
+* Pro tip: Importing third-party packages
+
+Package needs to be in your workspace
+
+    go get github.com/sirupsen/logrus
+
+An import path is uniquely identified by its location in a workspace
+
+A packages located in:
+
+    $GOPATH/src/github.com/sirupsen/logrus    
+
+can be imported using its relative path
+
+    import "github.com/sirupsen/logrus"
+
 * Exporting
 
 In order for other packages to use your function, it needs to be _exported_.
@@ -304,35 +213,44 @@ Functions are not the only thing we can export.
 
 .code packages/example1.go /START STRUCT OMIT/,/END STRUCT OMIT/
 
-* Exercise: ids
-
-- Open the `ids` exercise in your editor
-- Use the `strings` package to create URL-friendly IDs from movie titles
-
-Hint: Check out the docs for the `ToLower`, `Fields` and `Join` functions at godoc.org.
-
-.link https://godoc.org/strings godoc.org
-
-* Importing third-party packages
-
-Package needs to be in your workspace
-
-    go get github.com/sirupsen/logrus
-
-An import path is uniquely identified by its location in a workspace
-
-A packages located in:
-
-    $GOPATH/src/github.com/sirupsen/logrus    
-
-can be imported using its relative path
-
-    import "github.com/sirupsen/logrus"
-
-
-
 * Exercise: packages
 
 - Open the `calculator` exercise in your editor
 - In `calc/add.go`, create an exported function that returns the sum of two integers
 - In `main.go`, call the function to print out the sum of any two numbers
+
+* Error handling
+
+Errors are returned just like any other value
+
+.code error/example1.go /func add/,/^}/
+
+Errors are handled explicitly
+
+.code error/example1.go /START HANDLE OMIT/,/END HANDLE OMIT/
+
+* Defer
+
+Have you ever forgotten to free that resource?
+
+.code defer/example1.go /func loadConfig/,/^}/
+
+* Defer
+
+Use the `defer` keyword to make sure a function is called when a function exits
+
+.code defer/example2.go /func loadConfig/,/^}/
+
+* Pro tip: Deferring anonymous functions
+
+Can be used for more involved clean-up work
+
+.play defer/example3.go /func main/,/^}/
+
+* Exercise: jump
+
+- Open the `jump` exercise in your editor
+- Add code to check if player is too tired to jump
+- Handle the error by printing an excuse befitting of your player
+
+
