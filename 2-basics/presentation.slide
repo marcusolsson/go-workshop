@@ -247,10 +247,9 @@ Can be used for more involved clean-up work
 
 .play defer/example3.go /func main/,/^}/
 
-* Exercise: jump
+* Exercise: division
 
-- Open the `jump` exercise in your editor
-- Add code to check if player is too tired to jump
-- Handle the error by printing an excuse befitting of your player
+- Open the `division` exercise in your editor
+- Change the `Divide` function to return an error when dividing with zero
 
 
