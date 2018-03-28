@@ -160,7 +160,7 @@ The `range` keyword can be used to loop over slices
 
 All `*.go` files within a directory is part of the same _package_ and must define the name of the package they belong to.
 
-.code packages/example1.go /START HELLO OMIT/,/END HELLO OMIT/ HLpackage
+.play packages/example1.go /START HELLO OMIT/,/END HELLO OMIT/ HLpackage
 
 * Importing packages
 

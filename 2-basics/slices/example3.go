@@ -10,7 +10,7 @@ func main() {
 	}
 
 	for idx := 0; idx < len(letters); idx++ {
-		fmt.Println(i, letters[i])
+		fmt.Println(idx, letters[idx])
 	}
 
 	for idx, letter := range letters {
