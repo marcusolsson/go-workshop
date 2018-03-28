@@ -34,7 +34,7 @@ Install the Go extension
 
 - VS Code: Open the Integrated Terminal and type:
 
-    $ go get github.com/marcusolsson/go-workshop-exercises
+    $ go get -d github.com/marcusolsson/go-workshop-exercises/...
 
 - Open the `hello` exercise in your editor
 - VS Code: Install All Go tools when asked to
