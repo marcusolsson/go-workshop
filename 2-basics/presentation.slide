@@ -85,7 +85,8 @@ Omit the condition and you have yourself an infinite loop
 * Exercise: loops
 
 - Open the `loops` exercise in your editor
-- Write a program that takes two integers and returns the first integer that is a multiple of both 5 and 7 within that range.
+- Write a program that takes two integers and returns the first integer that is a multiple of both 5 and 7 within that range
+- Hint: i%2 == 0 to check if i is a multiple of 2
 
 * Struct types
 
